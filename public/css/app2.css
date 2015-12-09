@@ -1,0 +1,59 @@
+.body{
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.body section{
+  width: 100%;
+}
+
+header{
+  height: 15vh;
+  border: none;
+  flex-direction: column-reverse;
+  padding-bottom: .5em;
+}
+
+.left{
+  min-height: 0;
+	height: 15vh;
+	background-color: green;
+}
+
+.right{
+  min-height: 0;
+}
+
+.right::after{
+  background: none;
+}
+
+#response{
+  border: 2px solid black;
+  background-color: #eeeeee;
+  margin: 1em 5%;
+  height: 8em;
+}
+
+
+ul{
+  list-style: none;
+  margin: .25em;
+}
+
+li{
+  margin: .3em 0;
+}
+
+#flexbuttons{
+  display: flex;
+  flex-direction: row;
+  margin: 0 0 6em 5%;
+}
+
+.buttons p{
+  height: 1em;
+  width: 10em;
+  float: left;
+  margin-right: 1em;
+}

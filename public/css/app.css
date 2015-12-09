@@ -19,7 +19,10 @@ p, h2, h1{
 
 h1{
   font-size: 1.5em;
-  color: #cdcdc9;
+  color: #ffffff;
+  margin-left: 5%;
+  text-align: left;
+  font-weight: light;
 }
 
 header, footer{
@@ -34,12 +37,8 @@ header{
   padding-bottom: .5em;
 }
 
-header h1{
-  margin-left: 10%;
-}
-
 .body{
-  background-color: #EEEEEE;
+  background-color: #FFFFFF;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -120,7 +119,7 @@ footer{
 
 footer p{
   text-align: left;
-  margin-left: 10%;
+  margin-left: 5%;
   font-size: 1.5em;
     color: #cdcdc9;
 }

@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/reset.css" media="screen" title="no title" charset="utf-8">
     <link rel="stylesheet" href="css/app.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="css/app2.css" media="screen" title="no title" charset="utf-8">
     <title>My Playlist</title>
   </head>
   <body>
@@ -12,28 +13,34 @@
       <h1>click an album to add its tracks to the bin</h1>
     </header>
 
-    <section class="body2">
-      <section class="top">
+    <section class="body">
+      <section class="left">
         <div class="albums">
 
         </div>
       </section>
-      <section class="bottom">
+      <section class="right">
         <div class="displayinfo">
-          <div>
-
+          <div id="response">
+            <ul class="artist-list">
+              <li>Adele: 21</li>
+              <li>Pink Floyd: The Division Bell</li>
+              <li>Michael Jackson: Thriller</li>
+            </ul>
           </div>
-          <div class="buttons">
-            <p>
-              <a href="playlist.html">choose Tracks</a>
-            </p>
           </div>
-          <div class="buttons">
-            <p>
-              <a href="playlist.html">choose Tracks</a>
-            </p>
-          </div>
-        </div>
+            <div id="flexbuttons">
+              <div class="buttons">
+                <p class="buttons">
+                  <a href="playlist.html">clear tracks</a>
+                </p>
+              </div>
+              <div class="buttons">
+                <p>
+                  <a href="playlist.html">submit bin</a>
+                </p>
+              </div>
+            </div>
       </section>
     </section>
 
