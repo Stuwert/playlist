@@ -1,0 +1,116 @@
+@font-face {
+    font-family: 'Avenir Next';
+    src: url('../fonts/AvenirNextLTPro-Regular.otf');
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
+body{
+  margin: 1.25%;
+  width: 98%;
+}
+
+p, h2{
+  text-align: center;
+  font-family: 'Avenir Next';
+}
+
+header, footer{
+  width: 100%;
+  height: 2em;
+  background-color: #9b9b8c;
+  display: flex;
+}
+
+header{
+  border-bottom: 1px solid black;
+  padding-bottom: .5em;
+}
+
+.body{
+  background-color: #EEEEEE;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.body section{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  min-width: 300px;
+  flex-grow: 2;
+}
+
+.left{
+  width: 50%;
+  min-height: 40vw;
+}
+
+.left .flexcontainer{
+  margin: 0 auto;
+  position: relative;
+  bottom: 2em;
+}
+
+.left h2{
+  color: #4c0066;
+  font-size: 2.75em;
+}
+
+.left p{
+  background-color: #353526;
+  margin: 0 auto;
+  border-radius: .25em;
+  font-size: 1em;
+  padding: .5em 1em;
+  margin-top: .5em;
+  color: #cdcdc9;
+}
+
+.right{
+  padding: 5px 0;
+  position: relative;
+  width: 50%;
+}
+
+.right::after{
+  content: '';
+  background: url("../img/track.fw.png") ;
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 0;
+  opacity: .19;
+}
+
+.right img{
+  width: 20vw;
+  height: 20vw;
+  margin: 5px auto;
+  z-index: 1;
+}
+
+/*.flexcontainer{
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+}*/
+
+footer{
+  padding-top: .5em;
+}
+
+footer p{
+  text-align: left;
+  margin-left: 10%;
+  font-size: 1.5em;
+  color: #cdcdc9;
+}
