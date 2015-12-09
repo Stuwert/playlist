@@ -7,10 +7,20 @@ $(document).ready(function(){
   });
 
   getter.done(function(response){
+    console.log(response["results"]);
     randomizeArray(response["results"], 3).forEach(printToHome);
     response["results"].forEach(printToPlaylist)
     var images = $('#albums').find('img').toArray();
     $('#albums').width(images.length * 85);
+    $('.left').on("click", "img", function(){
+      var thisId = $(this).attr('id')
+      thisId = parseFloat(thisId);
+      response["results"].forEach(function(item){
+        if(item["id"] === thisId){
+          $('textarea').append("\n " + item["artist"] + ": " + item["title"]);
+        }
+      })
+    });
   });
 
   getter.fail(function(){
@@ -26,8 +36,9 @@ $(document).ready(function(){
     $('#albums').append('<img' + ' id="' + object["id"] + '" src="images/' + object["cover_art"] + '" />');
   }
 
+
   $('#clear').click(function(){
-    $('textarea').html("");
+    $('textarea').html(null);
   })
 
   $('#submit').click(function(){
