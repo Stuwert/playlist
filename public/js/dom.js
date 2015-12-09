@@ -28,8 +28,21 @@ $(document).ready(function(){
 
   $('#submit').click(function(){
     var artistLists = $('textarea').val();
-    console.log(toObj(parseArray(artistLists.split("\n"))));
-  })
+    var myObject = toObj(parseArray(artistLists.split("\n")));
+    console.log(myObject);
+    var post = $.ajax({
+      url: "https://lit-fortress-6467.herokuapp.com/post",
+      method: "POST",
+      data: myObject
+    });
 
+    post.done(function(response){
+      console.log(response);
+    })
+
+    post.fail(function(){
+      console.log("Stoobs is sad");
+    })
+  })
 
 })

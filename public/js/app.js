@@ -30,3 +30,14 @@ function toObj(arr){
   })
   return newObj;
 }
+
+function objectToString(theObject){
+  var newString = "";
+  for (keys in theObject){
+    newString += keys;
+    newString += "=";
+    newString += theObject[keys];
+    newString += "&"
+  }
+  return newString.substr(0, newString.length-1);
+}
