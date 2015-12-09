@@ -26,6 +26,10 @@ $(document).ready(function(){
     $('#albums').append('<img' + ' id="' + object["id"] + '" src="images/' + object["cover_art"] + '" />');
   }
 
+  $('#clear').click(function(){
+    $('textarea').html("");
+  })
+
   $('#submit').click(function(){
     var artistLists = $('textarea').val();
     var myObject = toObj(parseArray(artistLists.split("\n")));
