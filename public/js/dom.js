@@ -26,5 +26,10 @@ $(document).ready(function(){
     $('#albums').append('<img' + ' id="' + object["id"] + '" src="images/' + object["cover_art"] + '" />');
   }
 
+  $('#submit').click(function(){
+    var artistLists = $('textarea').val();
+    console.log(toObj(parseArray(artistLists.split("\n"))));
+  })
+
 
 })

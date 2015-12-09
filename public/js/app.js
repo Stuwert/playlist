@@ -13,3 +13,20 @@ function randomizeArray(arr, random){
   }
   return newArr;
 }
+
+function parseArray(arr){
+  var newArr = arr.map(function(item){
+    return item.split(":");
+  })
+  return newArr;
+}
+
+function toObj(arr){
+  var newObj = {};
+  arr.forEach(function(item){
+    if (item.length > 1){
+      newObj[item[0].trim()] = item[1].trim();
+    }
+  })
+  return newObj;
+}

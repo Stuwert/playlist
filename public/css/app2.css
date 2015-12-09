@@ -36,12 +36,10 @@ header{
   overflow-x: scroll;
 }
 
-.right{
-  min-height: 0;
-}
 
 .right::after{
   background: none;
+  z-index: -5;
 }
 
 #response{
@@ -51,6 +49,14 @@ header{
   height: 8em;
 }
 
+#myPlaylist{
+  height: 100%;
+  width: 100%;
+  border: none;
+  font-size: 15px;
+  padding: 0;
+  background-color: #eeeeee;
+}
 
 ul{
   list-style: none;
