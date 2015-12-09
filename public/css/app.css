@@ -115,11 +115,13 @@ header{
 
 footer{
   padding-top: .5em;
+  background-color: #686859;
 }
 
 footer p{
   text-align: left;
   margin-left: 5%;
-  font-size: 1.5em;
-    color: #cdcdc9;
+  font-size: 1.35em;
+  color: #cdcdc9;
+
 }
