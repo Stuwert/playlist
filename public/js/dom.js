@@ -7,8 +7,8 @@ $(document).ready(function(){
   });
 
   getter.done(function(response){
-    randomizeArray(response["results"], 3).forEach(printToHome, "cover_art");
-    response["results"].forEach(printToPlaylist, "cover_art")
+    randomizeArray(response["results"], 3).forEach(printToHome);
+    response["results"].forEach(printToPlaylist)
     var images = $('#albums').find('img').toArray();
     $('#albums').width(images.length * 85);
   });
@@ -19,11 +19,11 @@ $(document).ready(function(){
 
 
   function printToHome(object){
-    $('#populateImage').append('<img src="images/' + object[this] + '" />');
+    $('#populateImage').append('<img' + ' id="' + object["id"] + '" src="images/' + object["cover_art"] + '" />');
   }
 
   function printToPlaylist(object){
-    $('#albums').append('<img src="images/' + object[this] + '" />');
+    $('#albums').append('<img' + ' id="' + object["id"] + '" src="images/' + object["cover_art"] + '" />');
   }
 
 
